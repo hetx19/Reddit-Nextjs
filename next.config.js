@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ['i.ibb.co', 'lh3.googleusercontent.com'],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  }
 }
 
 module.exports = nextConfig
