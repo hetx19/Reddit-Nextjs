@@ -13,6 +13,8 @@ const style = {
 }
 
 const PostView = () => {
+  
+  const { selectedPost } = useContext(RedditContext);
 
   const router = useRouter();
 
@@ -22,7 +24,6 @@ const PostView = () => {
     }
   }, [])
 
-  const { selectedPost } = useContext(RedditContext);
 
   return (
     <div className={style.wrapper}>
@@ -30,8 +31,8 @@ const PostView = () => {
       <div className={style.container}>
         <div className={style.containerWrapper}>
           <Post {...selectedPost} />
-          <SaveComment postId={selectedPost.id} />
-          <Comments postId={selectedPost.id} />
+          {selectedPost && <SaveComment postId={selectedPost.id} />}
+          {selectedPost && <Comments postId={selectedPost.id} />}
         </div>
       </div>
     </div>
