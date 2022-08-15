@@ -1,3 +1,7 @@
+## THIS PROJECT IS HOSTED AT: 
+https://reddit-clone-lovat-psi.vercel.app/
+
+
 Welcome to the NextJS base template bootstrapped using the `create-next-app`. This template supports TypeScript, but you can use normal JavaScript as well.
 
 ## Getting Started
